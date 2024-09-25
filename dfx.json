@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "CipherSafe_backend": {
+      "main": "src/CipherSafe_backend/main.mo",
+      "type": "motoko"
+    },
+    "CipherSafe_frontend": {
+      "dependencies": [
+        "CipherSafe_backend"
+      ],
+      "source": [
+        "src/CipherSafe_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "CipherSafe_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
